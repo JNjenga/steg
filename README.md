@@ -1,7 +1,7 @@
 # steg
 
 ---
-Article : [Steganography, Hide Text in Image](http://jnjenga.com//articles/steganography-hide-text-in-image/)
+Article : [Steganography, Hide Text in Image](http://jnjenga.com/articles/steganography-hide-text-in-image/)
 
 Steg is a steganography implementation done using C. Steganography is the art of hiding information inside other files, in this case inside an image.
 
@@ -11,7 +11,7 @@ Steg is a steganography implementation done using C. Steganography is the art of
 | :---------------------: | :---------------------------------: |
 | ![Original](test-files/original.bmp) | ![Encrypted](generated-files/enc-output.bmp) |
 
-The second image has tje English version of the Kenyan national anthem hidden inside it.
+The second image has the English version of the Kenyan national anthem hidden inside it.
 
 ## How Build
 
