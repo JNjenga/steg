@@ -168,22 +168,6 @@ unsigned char dec_char(pixel_t * px)
 	return (unsigned char)value;
 }
 
-void enc_text(char * text, pixel_t * data)
-{
-	size_t size = strlen(text);
-
-	for(size_t i = 0; i < size - 1 ; i++)
-	{
-		char c = text[i];
-		// printf("int : %u ", c);
-		pixel_t * px = &data[i];
-
-		enc_char(c, px);
-	}
-
-	enc_char('\0', &data[size - 1]);
-}
-
 void copy_file(FILE * in, FILE * out)
 {
 	fseek(in, 0, SEEK_END);
@@ -263,6 +247,7 @@ int main(int argc, const char *argv[argc+1])
 		fclose(out_file);
 		return 0;
 	}
+
 	bitmap_t * bmp = read_bitmap(in_file);
 
 	if(mode[0] == '-' && mode[1] == 'e')
@@ -286,9 +271,23 @@ int main(int argc, const char *argv[argc+1])
 				return 0;
 			}
 
-			enc_text(data, bmp->pixels);
+			// enc_text(data, bmp->pixels);
+
+			size_t size = strlen(data);
+
+			for(size_t i = 0; i < size ; i++)
+			{
+				char c = data[i];
+				// printf("int : %u ", c);
+				pixel_t * px = &bmp->pixels[i];
+
+				enc_char(c, px);
+			}
+
+			enc_char('\0', &bmp->pixels[size]);
 
 			write_bitmap(out_file, bmp);
+
 			free(data);
 		}
 		// else if(type[0] == '-' && type[0] == 'i')
