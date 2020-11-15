@@ -1,6 +1,7 @@
 # steg
 
 ---
+Article : [Steganography, Hide Text in Image](http://jnjenga.com//articles/steganography-hide-text-in-image/)
 
 Steg is a steganography implementation done using C. Steganography is the art of hiding information inside other files, in this case inside an image.
 
