@@ -37,6 +37,8 @@ Compile the `steg.c` file using any C compiler that  supports C99.
 - `-t` - text, hide text data in image
 - ~~`-i` - hide image inside another image~~
 
+> Only supports ARGB bitmap file format at the moment
+
 ### Usage Example
 
 Encrypting
@@ -47,7 +49,6 @@ Decrypting
 
 `steg -d -t input.bmp output.txt`
 
-> Only supports bitmap file format at the moment
 
 ## License
 
