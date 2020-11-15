@@ -12,6 +12,14 @@ Steg is a steganography implementation done using C. Steganography is the art of
 
 The second image has the Kenyan national anthem in Swahili hidden inside it.
 
+## How Build
+
+`make build` - Requires GCC compiler 
+
+or
+
+Compile the `steg.c` file using any C compiler that  supports C99.
+
 ## Usage
 
 `steg [mode] [type] [input_file] [out_file] [plain_text]`
