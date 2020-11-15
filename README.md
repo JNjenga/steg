@@ -2,7 +2,7 @@
 
 ---
 
-Steg is a steganography implementation done using C. Steganography is the art of hiding information in plain sight, in this case inside an image.
+Steg is a steganography implementation done using C. Steganography is the art of hiding information inside other files, in this case inside an image.
 
  Can you see any difference ?
 
