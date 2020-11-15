@@ -11,7 +11,7 @@ Steg is a steganography implementation done using C. Steganography is the art of
 | :---------------------: | :---------------------------------: |
 | ![Original](test-files/original.bmp) | ![Encrypted](generated-files/enc-output.bmp) |
 
-The second image has English version of the Kenyan national anthem hidden inside it.
+The second image has tje English version of the Kenyan national anthem hidden inside it.
 
 ## How Build
 
